@@ -24,7 +24,8 @@ class Product extends Component {
                             disabled={inCart ? true : false}
                             onClick={() => {
                                 value.handleAddToCart(id);
-                            }}
+                                value.openModal(id);
+                            }}    
                         >
                         {inCart ?(<p className="text-capitalize mb-0" disabled>in cart</p>)
                         : 
