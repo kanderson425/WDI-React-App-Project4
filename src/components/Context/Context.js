@@ -1,37 +1,46 @@
 import React, { Component } from 'react';
 import {storeProducts, detailProduct} from '../../data';
-
-
 const ProductContext = React.createContext();
 //Provider
 //Consumer
 
 class ProductProvider extends Component {
     state = {
-        products: storeProducts,
+        products: [],
         detailProduct: detailProduct
     };
-    handleDetail = () => {
-        console.log("Hello from detail")
-    };
 
-    handleAddToCart = () => {
-        console.log("Hello from add to cart");
-    };
-    tester = () => {
-        console.log('State products: ', this.state.products[0].inCart);
-        console.log('Data products: ', storeProducts[0].inCart);
-
-        const tempProducts = [...this.state.products];
-        tempProducts[0].inCart = true;
-        this.setState(() => {
-            return {products:tempProducts}
-        }, () => {
-            console.log('State products: ', this.state.products[0].inCart);
-            console.log('Data products: ', storeProducts[0].inCart);
-        });
+    getItem = (id) => {
+        const product = this.state.products.find(item => item.id ===id);
+        return product;
     }
 
+    handleDetail = (id) => {
+        const product = this.getItem(id);
+        this.setState(() => {
+            return {detailProduct: product}
+        })
+    };
+
+    handleAddToCart = (id) => {
+        console.log(`Hello from add to cart. Id is ${id}`);
+    };
+
+    setProducts = () => {
+        let tempProducts = [];
+        storeProducts.forEach(item => {
+            const singleItem = {...item};
+            tempProducts = [...tempProducts, singleItem];
+
+        })
+        this.setState(() => {
+            return {products: tempProducts };
+        });
+    };
+
+    componentDidMount() {
+        this.setProducts();
+    }
 
     render() {
         return (
@@ -40,7 +49,7 @@ class ProductProvider extends Component {
                 ...this.state,
                 handleDetail: this.handleDetail,
                 handleAddToCart: this.handleAddToCart,
-            }}><button onClick={this.tester}>Test ME</button>
+            }}>
                 {this.props.children}
             </ProductContext.Provider>
         );
