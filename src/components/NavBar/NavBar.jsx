@@ -20,6 +20,22 @@ class NavBar extends Component {
                         </Link>
                     </li>
                 </ul>
+                <Link to="/sign-up" className="ml-auto">
+                    <ButtonContainer>
+                        <span className="mr-2">
+                        <i className="fas fa-user" />
+                        </span>
+                        Create Account
+                    </ButtonContainer>
+                </Link>
+                <Link to="/login" className="ml-auto">
+                    <ButtonContainer>
+                        <span className="mr-2">
+                        <i className="fas fa-user" />
+                        </span>
+                        Login
+                    </ButtonContainer>
+                </Link>
                 <Link to="/cart" className="ml-auto">
                     <ButtonContainer>
                         <span className="mr-2">

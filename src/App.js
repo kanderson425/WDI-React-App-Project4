@@ -8,6 +8,8 @@ import Details from './components/Details/Details';
 import Cart from './components/Cart/Cart';
 import Default from './components/Default/Default';
 import Modal from './components/Modal/Modal';
+import SignUp from './components/SignUpForm/SignUpForm';
+import Login from './Pages/LoginPage/LoginPage';
 
 
 class App extends Component {
@@ -19,6 +21,8 @@ class App extends Component {
           <Route exact path="/" component={ProductList} />
           <Route exact path="/details" component={Details} />
           <Route exact path="/cart" component={Cart} />
+          <Route exact path="/sign-up" component={SignUp} />
+          <Route exact path="/login" component={Login} />
           <Route component={Default} />
         </Switch>
         <Modal />
