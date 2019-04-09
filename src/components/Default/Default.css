@@ -1,0 +1,9 @@
+.center{
+    text-align:center !important;
+}
+
+#space-invaders {
+  margin: 0 auto !important;
+  display: block !important;
+  background: white !important;
+}
