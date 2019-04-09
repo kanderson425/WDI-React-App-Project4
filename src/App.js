@@ -9,6 +9,7 @@ import Cart from './components/Cart/Cart';
 import Default from './components/Default/Default';
 import Modal from './components/Modal/Modal';
 
+
 class App extends Component {
   render() {
     return (

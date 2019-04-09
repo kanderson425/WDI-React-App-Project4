@@ -6,7 +6,12 @@ class Default extends Component {
         return (
             <React.Fragment>
                 <p class="center">Space Invadors destroyed this page! Take revenge on them!
-  <br/> Use <span class="label label-danger">Space</span> to shoot and <span class="label label-danger">←</span>&#160;<span class="label label-danger">→</span> to move!&#160;&#160;&#160;<button class="btn btn-default btn-xs" id="restart">Restart</button></p>
+                <br/> 
+                Use <span class="label label-danger">Space
+                </span> to shoot and <span class="label label-danger">←
+                </span>&#160;<span class="label label-danger">→
+                </span> to move!&#160;&#160;&#160;
+                <button class="btn btn-default btn-xs" id="restart">Restart</button></p>
 
 <canvas id="space-invaders"/>
 
