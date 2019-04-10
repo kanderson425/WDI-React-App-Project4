@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import userService from '../../utils/userService';
 
 class SignupForm extends Component {
-
   state = {
     name: '',
     email: '',
@@ -38,6 +37,7 @@ class SignupForm extends Component {
   }
 
   render() {
+    console.log(this.props.getItems)
     return (
       <div>
         <header className="header-footer">Sign Up</header>

@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, createContext } from 'react';
 import {storeProducts, detailProduct} from '../../data';
-const ProductContext = React.createContext();
-//Provider
-//Consumer
+import userService from '../../utils/userService';
+const ProductContext = createContext();
+const { Consumer, Provider } = ProductContext;
 
+
+//you name this toplevel component what ever you want
 class ProductProvider extends Component {
     state = {
         products: [],
@@ -14,8 +16,14 @@ class ProductProvider extends Component {
         cartSubTotal: 0,
         cartTax: 0,
         cartTotal: 0,
+        user: {
+            name: "",
+            email: "",
+            password: ""
+        },
     };
 
+/*--- Product Context Methods ---*/    
     getItem = (id) => {
         const product = this.state.products.find(item => item.id ===id);
         return product;
@@ -134,8 +142,7 @@ class ProductProvider extends Component {
             this.addtotals();
         })
     }
-
-    
+  
     clearCart = () => {
         this.setState(() => {
             return {cart: []}
@@ -145,9 +152,6 @@ class ProductProvider extends Component {
         });
     };
 
-    componentDidMount() {
-        this.setProducts();
-    }
     addtotals = () => {
         let subTotal = 0;
         this.state.cart.map(item =>(subTotal += item.total));
@@ -164,9 +168,56 @@ class ProductProvider extends Component {
 
     }
 
+    componentDidMount() {
+        this.setProducts();
+        const user = userService.getUser();
+        this.setState({ user })
+    }
+
+    /*--- AuthContext Methods ---*/
+    handleChange = (e) => {
+        this.props.updateMessage('');
+        this.setState({
+          // Using ES2015 Computed Property Names
+          [e.target.name]: e.target.value
+        });
+    }
+    
+    handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+          await userService.signup(this.state);
+          // Let <App> know a user has signed up!
+          this.props.handleSignupOrLogin();
+          // Successfully signed up - show Product Page
+          this.props.history.push('/');
+        } catch (err) {
+          // Invalid user data (probably duplicate email)
+          this.props.updateMessage(err.message);
+        }
+        console.log("HandleSubmit is getting HIT");
+    }
+
+    handleLogout = () => {
+        userService.logout();
+        this.setState({ user: null });
+      }
+
+    handleSignupOrLogin = () => {
+        this.setState({user: userService.getUser()});
+    }
+
+    isFormInvalid() {
+        return !(this.state.name && this.state.email && this.state.password === this.state.passwordConf);
+    }
+
+    updateMessage = (msg) => {
+        this.setState({message: msg});
+    }
+
     render() {
         return (
-            <ProductContext.Provider 
+            <Provider
             value={{
                 ...this.state,
                 handleDetail: this.handleDetail,
@@ -177,12 +228,17 @@ class ProductProvider extends Component {
                 decrement: this.decrement,
                 removeItem: this.removeItem,
                 clearCart: this.clearCart,
+                handleChange: this.handleChange,
+                handleSubmit: this.handleSubmit,
+                isFormInvalid: this.isFormInvalid,
+                updateMessage: this.updateMessage,
+                handleLogout: this.handleLogout,
+                handleSignupOrLogin: this.handleSignupOrLogin,
             }}>
                 {this.props.children}
-            </ProductContext.Provider>
+            </Provider>
         );
     }
 }
 
-const ProductConsumer = ProductContext.Consumer;
-export { ProductProvider, ProductConsumer };
+export { ProductProvider, Consumer as ProductConsumer };

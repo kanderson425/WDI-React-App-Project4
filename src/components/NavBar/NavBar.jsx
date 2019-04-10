@@ -4,12 +4,10 @@ import logo from '../../logo2.png';
 import styled from 'styled-components';
 import {ButtonContainer} from '../Button/Button';
 
-
 class NavBar extends Component {
     render() {
         return (
             <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-
                 <Link to='/'>
                     <img src={logo} alt="store" className="navbar-brand"></img>
                 </Link>

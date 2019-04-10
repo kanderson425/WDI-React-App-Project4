@@ -36,6 +36,16 @@ module.exports = {
       return res.status(401).json(err);
     }
   }
+
+  /*----- Helper Functions -----*/
+
+function createJWT(user) {
+  return jwt.sign(
+    {user}, // data payload
+    SECRET,
+    {expiresIn: '24h'}
+  );
+}
   
 
 
