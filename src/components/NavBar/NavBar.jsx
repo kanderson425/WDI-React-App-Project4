@@ -176,23 +176,23 @@ class NavBar extends Component {
                                     <img src={logo} alt="store" className="navbar-brand"></img>
                                 </Link>
                                 <ul className="navbar-nav align-items-center">
-                                    <li className="nav-item ml-5">
+                                    <li className="nav-item ml-4">
                                         <Link to="/products" className="nav-link">
                                             Products
                                         </Link>
                                      </li>
                                 </ul>
-                                <Link to="/signup" className="ml-auto">
+                                <Link to="/signup" className=" signupButton ml-auto">
                                     <ButtonContainer>
-                                    <span className="mr-2">
+                                    <span className="mr-1">
                                         <i className="fas fa-user" />
                                     </span>
                                         Create Account
                                     </ButtonContainer>
                                 </Link>
-                                <Link to="/login" className="ml-auto">
+                                <Link to="/login" className=" loginButton ml-1">
                                     <ButtonContainer>
-                                    <span className="mr-2">
+                                    <span className="mr-1">
                                         <i className="fas fa-user" />
                                     </span>
                                         Login
@@ -210,20 +210,8 @@ class NavBar extends Component {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 const NavWrapper = styled.nav`
-    background:var(--mainBlue);
+    background:var(--mainDark);
     .nav-link {
         color: val(--mainWhite)!important;
         font-size: 1.3rem;

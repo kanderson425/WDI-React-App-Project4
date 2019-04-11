@@ -11,7 +11,6 @@ class HomePage extends Component {
   render() {
     return (
       <div className='HomePage'>
-        <h1>Is this thing working?</h1>
         <Home
           {...this.props}  
         />

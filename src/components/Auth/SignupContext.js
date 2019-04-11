@@ -13,7 +13,7 @@ export default class ContextTester extends Component {
         <div>
             {/* the first child of any consumer must be a function because it is wrapping the ui that are rendering */}
             <ProductConsumer>
-                {({ handleChange, handleSubmit, isFormInvalid, updateMessage, handleSignupOrLogin, history, handleLogout }) =>{ 
+                {({ handleChange, handleSubmit, isFormInvalid, updateMessage, handleSignupOrLogin, history, handleLogout, cart }) =>{ 
                     return (
                         <div>
                             <SignUpPage 
@@ -24,6 +24,7 @@ export default class ContextTester extends Component {
                                 handleSignupOrLogin = {handleSignupOrLogin}
                                 history = {history}
                                 handleLogOut={handleLogout}
+                                cart={cart}
                             />
                         </div>
                       );

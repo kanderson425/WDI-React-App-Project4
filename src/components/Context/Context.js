@@ -20,7 +20,7 @@ class ProductProvider extends Component {
             name: "",
             email: "",
             password: "",
-            cart: []
+            userCart: []
         },
     };
 
@@ -45,8 +45,12 @@ class ProductProvider extends Component {
         product.count = 1;
         const price = product.price;
         product.total = price;
+        this.state.user.userCart = this.state.cart;
         this.setState(() => {
-            return { products: tempProducts, cart: [...this.state.cart, product]}
+            return { 
+                products: tempProducts, 
+                cart: [...this.state.cart, product],
+            }
         }, () => {
             this.addtotals();
         }
@@ -146,7 +150,11 @@ class ProductProvider extends Component {
   
     clearCart = () => {
         this.setState(() => {
-            return {cart: []}
+            const userCart = this.state.user.cart;
+            return {
+                cart: [],
+                userCart: []
+            }
         }, () => {
             this.setProducts();
             this.addtotals();
