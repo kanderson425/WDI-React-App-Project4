@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SignupForm from '../../components/SignupForm/SignupForm';
-// import './SignupPage.css';
+import '../SignUpPage/SignUpPage.css';
+import { ProductConsumer } from '../../components/Context/Context';
 
 class SignupPage extends Component {
   constructor(props) {
@@ -15,7 +16,11 @@ class SignupPage extends Component {
   render() {
     return (
       <div className='SignupPage'>
-        <SignupForm {...this.props} updateMessage={this.updateMessage} />
+        <SignupForm 
+          {...this.props} 
+          updateMessage={this.updateMessage}
+          history={this.props.history}  
+        />
         <p>{this.state.message}</p>
       </div>
     );
@@ -23,3 +28,4 @@ class SignupPage extends Component {
 };
 
 export default SignupPage;
+

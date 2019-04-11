@@ -19,7 +19,8 @@ class ProductProvider extends Component {
         user: {
             name: "",
             email: "",
-            password: ""
+            password: "",
+            cart: []
         },
     };
 
@@ -201,6 +202,7 @@ class ProductProvider extends Component {
     handleLogout = () => {
         userService.logout();
         this.setState({ user: null });
+        console.log('The handleLogout method has been hit');
       }
 
     handleSignupOrLogin = () => {
@@ -234,6 +236,7 @@ class ProductProvider extends Component {
                 updateMessage: this.updateMessage,
                 handleLogout: this.handleLogout,
                 handleSignupOrLogin: this.handleSignupOrLogin,
+                history: this.history,
             }}>
                 {this.props.children}
             </Provider>

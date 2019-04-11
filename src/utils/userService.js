@@ -28,14 +28,17 @@ function logout() {
 }
 
 function login(creds) {
+  console.log('the login method has been hit');
   return fetch(BASE_URL + 'login', {
     method: 'POST',
     headers: new Headers({'Content-Type': 'application/json'}),
     body: JSON.stringify(creds)
   })
   .then(res => {
+    console.log(res.headers);
     // Valid login if we have a status of 2xx (res.ok)
     if (res.ok) return res.json();
+    console.log('The error piece has been hit');
     throw new Error('Bad Credentials!');
   })
   .then(({token}) => tokenService.setToken(token));

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import './LoginPage.css';
 import userService from '../../utils/userService';
+import { ProductConsumer } from '../../components/Context/Context';
 
 class LoginPage extends Component {
   
@@ -21,10 +22,13 @@ class LoginPage extends Component {
     e.preventDefault();
     try {
       await userService.login(this.state);
+      console.log(this.state);
       // Let <App> know a user has signed up!
       this.props.handleSignupOrLogin();
-      // Successfully signed up - show GamePage
-      this.props.history.push('/');
+      console.log(this.props.history);
+      // Successfully signed up - show ProductsPage
+      this.props.history.push('/products');
+
     } catch (err) {
       // Use a modal or toast in your apps instead of alert
       alert('Invalid Credentials!');
@@ -58,4 +62,4 @@ class LoginPage extends Component {
   }
 };
 
-export default LoginPage;
+export default withRouter(LoginPage);

@@ -8,22 +8,31 @@ import Details from './components/Details/Details';
 import Cart from './components/Cart/Cart';
 import Default from './components/Default/Default';
 import Modal from './components/Modal/Modal';
-import SignUp from './Pages/SignUpPage/SignUpPage';
+import Home from './components/Home/Home';
+// import SignUp from './Pages/SignUpPage/SignUpPage';
 import Login from './Pages/LoginPage/LoginPage';
-import ContextTester from './components/Auth/AuthContext';
+import SignupContextTester from './components/Auth/SignupContext';
+import LoginContextTester from './components/Auth/LoginContext';
+import HomePage from './Pages/HomePage/HomePage';
+
 
 
 class App extends Component {
   render() {
     return (
       <>
-        <NavBar />
+        <NavBar
+          handleLogout={this.handleLogout} 
+        />
         <Switch>
-          <Route exact path="/" component={ProductList} />
+          <Route exact path="/" 
+            component={Home}
+            />
+          <Route exact path="/products" component={ProductList}/>
           <Route exact path="/details" component={Details} />
           <Route exact path="/cart" component={Cart} />
-          <Route exact path="/sign-up" component={ContextTester} />
-          <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={SignupContextTester} />
+          <Route exact path="/login" component={LoginContextTester} />
           <Route component={Default} />
         </Switch>
         <Modal />
