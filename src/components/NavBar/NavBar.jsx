@@ -127,8 +127,6 @@ import { ProductConsumer } from '../Context/Context';
 //     </div>
 
 
-
-
 /*NavBar is working, but dynamic isn't */
 class NavBar extends Component {
     render() {
@@ -136,9 +134,9 @@ class NavBar extends Component {
         <div>
             {/* the first child of any consumer must be a function because it is wrapping the ui that are rendering */}
             <ProductConsumer>
-                {({ handleLogout }) => { 
+                {({ handleLogout, user }) => { 
                     return (
-                        (this.user) ?
+                        (user) ?
                         <div>
                             <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
                                 <Link to='/'>
@@ -171,11 +169,9 @@ class NavBar extends Component {
                                 </Link>
                             </NavWrapper>
                         </div>
-
                         :
-
                         <div>
-                                                        <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
+                            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
                                 <Link to='/'>
                                     <img src={logo} alt="store" className="navbar-brand"></img>
                                 </Link>
@@ -203,10 +199,8 @@ class NavBar extends Component {
                                     </ButtonContainer>
                                 </Link>
                             </NavWrapper>
-
                         </div>
-
-                      );
+                    );
                 }
                 }
 

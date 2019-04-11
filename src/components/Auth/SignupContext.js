@@ -25,11 +25,6 @@ export default class ContextTester extends Component {
                                 history = {history}
                                 handleLogOut={handleLogout}
                             />
-                            {/* <LoginPage
-                                handleSignupOrLogin = {handleSignupOrLogin}
-                                handleLogOut = {handleLogout}
-                                history = {history} 
-                            /> */}
                         </div>
                       );
                 }
