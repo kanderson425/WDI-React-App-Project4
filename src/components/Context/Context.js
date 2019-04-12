@@ -4,7 +4,6 @@ import userService from '../../utils/userService';
 const ProductContext = createContext();
 const { Consumer, Provider } = ProductContext;
 
-
 //you name this toplevel component what ever you want
 class ProductProvider extends Component {
     state = {
@@ -20,7 +19,10 @@ class ProductProvider extends Component {
             name: "",
             email: "",
             password: "",
-            userCart: []
+            cart: ['test_item_1', 'test_item_2'],
+            cartSubTotal: 0,
+            cartTax: 0,
+            cartTotal: 0,
         },
     };
 
@@ -45,11 +47,13 @@ class ProductProvider extends Component {
         product.count = 1;
         const price = product.price;
         product.total = price;
-        this.state.user.userCart = this.state.cart;
+        // const userProperties = {...this.state.user}
+        const cart = {...this.state.user.cart}
+        console.log({...this.state.user.cart});
         this.setState(() => {
             return { 
                 products: tempProducts, 
-                cart: [...this.state.cart, product],
+                cart: [cart, product],
             }
         }, () => {
             this.addtotals();
@@ -150,10 +154,8 @@ class ProductProvider extends Component {
   
     clearCart = () => {
         this.setState(() => {
-            const userCart = this.state.user.cart;
             return {
                 cart: [],
-                userCart: []
             }
         }, () => {
             this.setProducts();
@@ -226,6 +228,7 @@ class ProductProvider extends Component {
     }
 
     render() {
+        console.log({...this.state.user.cart})
         return (
             <Provider
             value={{

@@ -1,9 +1,14 @@
-.center{
-    text-align:center !important;
+.deadInsideGif {
+    margin-left: 10rem;
+    margin-top: 10rem;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
 }
 
-#space-invaders {
-  margin: 0 auto !important;
-  display: block !important;
-  background: white !important;
+.defaultLandPage {
+    background: url('../../img/Dead_Inside.gif') !important;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
 }

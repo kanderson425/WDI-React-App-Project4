@@ -1,3 +1,8 @@
 header {
     color: blue !important;
+    margin-left: 10rem;
+}
+
+.form-group {
+    text-align: center;
 }

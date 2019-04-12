@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 import {Link, withRouter} from 'react-router-dom';
 import {ButtonContainer} from '../Button/Button';
-import Gif from '../../img/Carlton_Dance.gif';
+import CarltonGif from '../../img/Carlton_Dance.gif';
 
 const Home = (props) => {
     return (
@@ -33,7 +33,8 @@ const Home = (props) => {
                         Login
                 </button>
             </Link>
-            <img src={Gif} alt="loading..." />                     
+            <br/>
+            <img src={CarltonGif} alt="loading..." />                     
         </div>
     )
 }

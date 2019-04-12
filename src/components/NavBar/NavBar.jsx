@@ -4,6 +4,7 @@ import logo from '../../logo2.png';
 import styled from 'styled-components';
 import {ButtonContainer} from '../Button/Button';
 import { ProductConsumer } from '../Context/Context';
+import DeadInsideGif from '../../img/Dead_Inside.gif';
 
 // Dynamic NavBar
 // const NavBar = (props) => {
