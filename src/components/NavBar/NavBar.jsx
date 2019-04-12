@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import {Link, withRouter} from 'react-router-dom';
-import logo from '../../logo2.png';
+import logo from '../../img/logo2.png';
 import styled from 'styled-components';
 import {ButtonContainer} from '../Button/Button';
 import { ProductConsumer } from '../Context/Context';
 import DeadInsideGif from '../../img/Dead_Inside.gif';
+import BillClintonGif from '../../img/Bill_Clinton.gif';
+import DeadInsidePic from '../../img/Dead_InsidePic.jpg';
+import CarltonGif from '../../img/Carlton_Dance.gif';
+import JazzCupPic from '../../img/Jazz_Cup.png';
+
 
 // Dynamic NavBar
 // const NavBar = (props) => {
@@ -141,7 +146,7 @@ class NavBar extends Component {
                         <div>
                             <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
                                 <Link to='/'>
-                                    <img src={logo} alt="store" className="navbar-brand"></img>
+                                    <img src={JazzCupPic} alt="store" className="navbar-brand"></img>
                                 </Link>
                                 <ul className="navbar-nav align-items-center">
                                     <li className="nav-item ml-5">

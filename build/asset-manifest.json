@@ -1,18 +1,19 @@
 {
-  "main.css": "/static/css/main.15818d47.chunk.css",
-  "main.js": "/static/js/main.6bcb548f.chunk.js",
-  "main.js.map": "/static/js/main.6bcb548f.chunk.js.map",
+  "main.css": "/static/css/main.5b875459.chunk.css",
+  "main.js": "/static/js/main.d9248b5c.chunk.js",
+  "main.js.map": "/static/js/main.d9248b5c.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
   "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
   "static/css/2.feca664a.chunk.css": "/static/css/2.feca664a.chunk.css",
-  "static/js/2.29fc19c3.chunk.js": "/static/js/2.29fc19c3.chunk.js",
-  "static/js/2.29fc19c3.chunk.js.map": "/static/js/2.29fc19c3.chunk.js.map",
+  "static/js/2.e5ba3907.chunk.js": "/static/js/2.e5ba3907.chunk.js",
+  "static/js/2.e5ba3907.chunk.js.map": "/static/js/2.e5ba3907.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.0bb609b3aa5897cd7e9caa1af4cbf81b.js": "/precache-manifest.0bb609b3aa5897cd7e9caa1af4cbf81b.js",
+  "precache-manifest.98ef62193965019e0025abdeec4cb49c.js": "/precache-manifest.98ef62193965019e0025abdeec4cb49c.js",
   "service-worker.js": "/service-worker.js",
   "static/css/2.feca664a.chunk.css.map": "/static/css/2.feca664a.chunk.css.map",
-  "static/css/main.15818d47.chunk.css.map": "/static/css/main.15818d47.chunk.css.map",
+  "static/css/main.5b875459.chunk.css.map": "/static/css/main.5b875459.chunk.css.map",
   "static/media/App.css": "/static/media/90s_Theme_Background.1b160bc2.png",
+  "static/media/Bill_Clinton.gif": "/static/media/Bill_Clinton.4eb81372.gif",
   "static/media/Carlton_Dance.gif": "/static/media/Carlton_Dance.bd265dbd.gif",
-  "static/media/Default.css": "/static/media/Dead_Inside.e49b947d.gif"
+  "static/media/Default.css": "/static/media/Dead_Inside.df4efa9a.gif"
 }

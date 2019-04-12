@@ -228,7 +228,6 @@ class ProductProvider extends Component {
     }
 
     render() {
-        console.log({...this.state.user.cart})
         return (
             <Provider
             value={{
