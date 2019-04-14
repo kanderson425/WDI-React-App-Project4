@@ -1,6 +1,9 @@
 {
   "name": "ecommerce_joke_app",
   "version": "0.1.0",
+  "engines": {
+    "node": "11.7.0"
+  },
   "private": true,
   "dependencies": {
     "bcrypt": "^3.0.5",
