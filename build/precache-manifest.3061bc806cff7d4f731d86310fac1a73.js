@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6d74a96a93d9b65bce7b",
+    "revision": "b27b3c112ca4bd40a99b",
     "url": "/static/css/main.5b875459.chunk.css"
   },
   {
-    "revision": "6d74a96a93d9b65bce7b",
-    "url": "/static/js/main.c4c83933.chunk.js"
+    "revision": "b27b3c112ca4bd40a99b",
+    "url": "/static/js/main.467fc10f.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/static/media/Bill_Clinton.4eb81372.gif"
   },
   {
-    "revision": "a9978e18489176aca839e60c1b6b97fb",
+    "revision": "722cc0154e3886e960705171f7ca0449",
     "url": "/index.html"
   }
 ];
