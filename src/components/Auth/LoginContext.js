@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
 import { ProductConsumer } from '../Context/Context';
-import {Link} from 'react-router-dom';
-import SignupForm from '../SignupForm/SignupForm';
-import SignUpPage from '../../Pages/SignUpPage/SignUpPage';
-import NavBar from '../NavBar/NavBar';
 import LoginPage from '../../Pages/LoginPage/LoginPage';
 
 export default class ContextTester extends Component {
