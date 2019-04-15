@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import SignupForm from '../../components/SignupForm/SignupForm';
-
+// import SignupForm from '../../components/SignupForm/SignupForm';
+import SignupForm from '/Users/kyleanderson/git/WDI/WDI-React-App-Project4/src/Pages/SignUpPage/SignUpPage.jsx';
 import '../SignUpPage/SignUpPage.css';
 // import { ProductConsumer } from '../../components/Context/Context';
 
