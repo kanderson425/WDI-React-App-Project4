@@ -366,8 +366,8 @@ export const storeProducts = [
   },
   {
     id: 31,
-    title: "Good Doggo",
-    img: "img/Animals-2.jpg",
+    title: "Super Soaker",
+    img: "img/Super_Soaker.jpg",
     price: 2000,
     company: "Cute, Inc.",
     info:
