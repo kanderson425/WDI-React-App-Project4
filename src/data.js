@@ -354,8 +354,8 @@ export const storeProducts = [
   },
   {
     id: 30,
-    title: "Good Doggo",
-    img: "img/Animals-2.jpg",
+    title: "Every sleepover ever",
+    img: "img/Socker_Boppers.jpg",
     price: 2000,
     company: "Cute, Inc.",
     info:
