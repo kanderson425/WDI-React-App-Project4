@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "28e38e04ce9c02a479b1",
+    "revision": "42b21c0182d275198f8c",
     "url": "/static/css/main.5b875459.chunk.css"
   },
   {
-    "revision": "28e38e04ce9c02a479b1",
-    "url": "/static/js/main.63df0df0.chunk.js"
+    "revision": "42b21c0182d275198f8c",
+    "url": "/static/js/main.759a2cea.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "380d4d4a1a31e917c863",
+    "revision": "2e2593a6bcf4d849b3da",
     "url": "/static/css/2.feca664a.chunk.css"
   },
   {
-    "revision": "380d4d4a1a31e917c863",
-    "url": "/static/js/2.e5ba3907.chunk.js"
+    "revision": "2e2593a6bcf4d849b3da",
+    "url": "/static/js/2.dfa8515e.chunk.js"
   },
   {
     "revision": "df4efa9a2cc48a4261011b3d0d9a197e",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/static/media/Bill_Clinton.4eb81372.gif"
   },
   {
-    "revision": "7029c9deadeb42dfe33b033bb03acd0b",
+    "revision": "c81115ad074adb25502b3b216971cec0",
     "url": "/index.html"
   }
 ];
