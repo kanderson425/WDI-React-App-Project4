@@ -355,7 +355,7 @@ export const storeProducts = [
   {
     id: 30,
     title: "Every sleepover ever",
-    img: "img/Socker_Boppers.jpg",
+    img: "img/Socker_Boppers.jpeg",
     price: 2000,
     company: "Cute, Inc.",
     info:
@@ -367,7 +367,7 @@ export const storeProducts = [
   {
     id: 31,
     title: "Super Soaker",
-    img: "img/Super_Soaker.jpg",
+    img: "img/Super_Soaker.jpeg",
     price: 2000,
     company: "Cute, Inc.",
     info:
@@ -378,8 +378,8 @@ export const storeProducts = [
   },
   {
     id: 32,
-    title: "Good Doggo",
-    img: "img/Animals-2.jpg",
+    title: "At the helm",
+    img: "img/Star_Trek_AC_Meme.jpeg",
     price: 2000,
     company: "Cute, Inc.",
     info:
@@ -390,8 +390,8 @@ export const storeProducts = [
   },
   {
     id: 33,
-    title: "Good Doggo",
-    img: "img/Animals-2.jpg",
+    title: "Bad Decisions",
+    img: "img/Bad_Decision_Jim_Carrey.png",
     price: 2000,
     company: "Cute, Inc.",
     info:
@@ -402,8 +402,8 @@ export const storeProducts = [
   },
   {
     id: 34,
-    title: "Good Doggo",
-    img: "img/Animals-2.jpg",
+    title: "In Dwight's Opinion",
+    img: "img/Dwight_Age_Meme.jpeg",
     price: 2000,
     company: "Cute, Inc.",
     info:
@@ -414,8 +414,8 @@ export const storeProducts = [
   },
   {
     id: 35,
-    title: "Good Doggo",
-    img: "img/Animals-2.jpg",
+    title: "I don't always...",
+    img: "img/Interesting_Man_Meme.jpg",
     price: 2000,
     company: "Cute, Inc.",
     info:
@@ -426,8 +426,8 @@ export const storeProducts = [
   },
   {
     id: 36,
-    title: "Good Doggo",
-    img: "img/Animals-2.jpg",
+    title: "Riiiiiight...",
+    img: "img/Software_DR_Evil_Meme.jpg",
     price: 2000,
     company: "Cute, Inc.",
     info:
@@ -438,8 +438,8 @@ export const storeProducts = [
   },
   {
     id: 37,
-    title: "Good Doggo",
-    img: "img/Animals-2.jpg",
+    title: "I know all the code",
+    img: "img/Coding_Experience_Meme.jpg",
     price: 2000,
     company: "Cute, Inc.",
     info:
@@ -450,8 +450,8 @@ export const storeProducts = [
   },
   {
     id: 38,
-    title: "Good Doggo",
-    img: "img/Animals-2.jpg",
+    title: "Put your semi-colon away...",
+    img: "img/Black_Panther_Developer_Meme.jpg",
     price: 2000,
     company: "Cute, Inc.",
     info:
@@ -462,8 +462,8 @@ export const storeProducts = [
   },
   {
     id: 39,
-    title: "Good Doggo",
-    img: "img/Animals-2.jpg",
+    title: "I see the light..",
+    img: "img/John_Goodman_Dad.jpg",
     price: 2000,
     company: "Cute, Inc.",
     info:
@@ -474,8 +474,8 @@ export const storeProducts = [
   },
   {
     id: 40,
-    title: "Good Doggo",
-    img: "img/Animals-2.jpg",
+    title: "Hi, Hungry!",
+    img: "img/Hungry_Dad_Meme.png",
     price: 2000,
     company: "Cute, Inc.",
     info:
