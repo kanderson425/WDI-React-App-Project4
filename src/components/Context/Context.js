@@ -19,7 +19,7 @@ class ProductProvider extends Component {
             name: "",
             email: "",
             password: "",
-            cart: ['test_item_1', 'test_item_2'],
+            cart: [],
             cartSubTotal: 0,
             cartTax: 0,
             cartTotal: 0,
@@ -49,11 +49,10 @@ class ProductProvider extends Component {
         product.total = price;
         // const userProperties = {...this.state.user}
         const cart = {...this.state.user.cart}
-        console.log({...this.state.user.cart});
         this.setState(() => {
             return { 
                 products: tempProducts, 
-                cart: [cart, product],
+                cart: [...this.state.cart, product],
             }
         }, () => {
             this.addtotals();
