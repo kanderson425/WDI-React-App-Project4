@@ -3,7 +3,7 @@ import { Link, withRouter } from 'react-router-dom';
 import userService from '../../utils/userService';
 
 
-class SignupForm extends Component {
+class SignUpForm extends Component {
   state = {
     name: '',
     email: '',
@@ -77,4 +77,4 @@ class SignupForm extends Component {
 };
 
 
-export default withRouter(SignupForm);
+export default withRouter(SignUpForm);

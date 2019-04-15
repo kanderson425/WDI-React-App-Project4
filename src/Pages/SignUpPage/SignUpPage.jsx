@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import SignupForm from '../../components/SignupForm/SignupForm';
+import SignupForm from '../../components/SignUpForm/SignUpForm';
 import '../SignUpPage/SignUpPage.css';
 // import { ProductConsumer } from '../../components/Context/Context';
 
-class SignupPage extends Component {
+class SignUpPage extends Component {
   constructor(props) {
     super(props);
     this.state = {message: ''}
@@ -27,5 +27,5 @@ class SignupPage extends Component {
   }
 };
 
-export default SignupPage;
+export default SignUpPage;
 
