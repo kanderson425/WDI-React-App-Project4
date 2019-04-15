@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import './LoginPage.css';
 import userService from '../../utils/userService';
-import { ProductConsumer } from '../../components/Context/Context';
 
 class LoginPage extends Component {
   

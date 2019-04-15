@@ -10,10 +10,8 @@ import Default from './components/Default/Default';
 import Modal from './components/Modal/Modal';
 import Home from './components/Home/Home';
 // import SignUp from './Pages/SignUpPage/SignUpPage';
-import Login from './Pages/LoginPage/LoginPage';
 import SignupContextTester from './components/Auth/SignupContext';
 import LoginContextTester from './components/Auth/LoginContext';
-import HomePage from './Pages/HomePage/HomePage';
 
 
 

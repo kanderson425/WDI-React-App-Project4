@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.css';
-import {Link, withRouter} from 'react-router-dom';
-import {ButtonContainer} from '../Button/Button';
+import {Link} from 'react-router-dom';
 import CarltonGif from '../../img/Carlton_Dance.gif';
 
 const Home = (props) => {

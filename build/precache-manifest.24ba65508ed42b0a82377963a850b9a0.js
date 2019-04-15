@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "42b21c0182d275198f8c",
-    "url": "/static/css/main.5b875459.chunk.css"
+    "revision": "00af657a17231a645914",
+    "url": "/static/css/main.ef873402.chunk.css"
   },
   {
-    "revision": "42b21c0182d275198f8c",
-    "url": "/static/js/main.759a2cea.chunk.js"
+    "revision": "00af657a17231a645914",
+    "url": "/static/js/main.5cd94947.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "2e2593a6bcf4d849b3da",
+    "revision": "a0607a3493196ba71dda",
     "url": "/static/css/2.feca664a.chunk.css"
   },
   {
-    "revision": "2e2593a6bcf4d849b3da",
-    "url": "/static/js/2.dfa8515e.chunk.js"
+    "revision": "a0607a3493196ba71dda",
+    "url": "/static/js/2.9f3c859f.chunk.js"
   },
   {
     "revision": "df4efa9a2cc48a4261011b3d0d9a197e",
@@ -32,11 +32,7 @@ self.__precacheManifest = [
     "url": "/static/media/90s_Theme_Background.1b160bc2.png"
   },
   {
-    "revision": "4eb8137228eea6cda2f59ab3fa44492b",
-    "url": "/static/media/Bill_Clinton.4eb81372.gif"
-  },
-  {
-    "revision": "c81115ad074adb25502b3b216971cec0",
+    "revision": "79bef9fa6e2ec00e2cd31241533034a3",
     "url": "/index.html"
   }
 ];

@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import {Link, withRouter} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import logo from '../../img/logo2.png';
 import styled from 'styled-components';
 import {ButtonContainer} from '../Button/Button';
 import { ProductConsumer } from '../Context/Context';
-import DeadInsideGif from '../../img/Dead_Inside.gif';
-import BillClintonGif from '../../img/Bill_Clinton.gif';
-import DeadInsidePic from '../../img/Dead_InsidePic.jpg';
-import CarltonGif from '../../img/Carlton_Dance.gif';
 import JazzCupPic from '../../img/Jazz_Cup.png';
 
 

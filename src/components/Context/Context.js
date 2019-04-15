@@ -48,7 +48,6 @@ class ProductProvider extends Component {
         const price = product.price;
         product.total = price;
         // const userProperties = {...this.state.user}
-        const cart = {...this.state.user.cart}
         this.setState(() => {
             return { 
                 products: tempProducts, 

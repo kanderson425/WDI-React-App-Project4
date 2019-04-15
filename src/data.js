@@ -342,8 +342,8 @@ export const storeProducts = [
   },
   {
     id: 29,
-    title: "Good Doggo",
-    img: "img/Animals-2.jpg",
+    title: "2019 Goals",
+    img: "img/2019_Goals_Meme.jpg",
     price: 2000,
     company: "Cute, Inc.",
     info:
