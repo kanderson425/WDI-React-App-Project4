@@ -2,7 +2,8 @@
   "name": "ecommerce_joke_app",
   "version": "0.1.0",
   "engines": {
-    "node": "11.7.0"
+    "node": "11.7.0",
+    "npm": "6.7.0"
   },
   "private": true,
   "dependencies": {
