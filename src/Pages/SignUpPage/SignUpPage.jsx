@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SignupForm from '../../components/SignupForm/SignupForm';
 import '../SignUpPage/SignUpPage.css';
-import { ProductConsumer } from '../../components/Context/Context';
+// import { ProductConsumer } from '../../components/Context/Context';
 
 class SignupPage extends Component {
   constructor(props) {
