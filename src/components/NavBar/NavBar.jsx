@@ -1,135 +1,10 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../../img/logo2.png';
 import styled from 'styled-components';
 import {ButtonContainer} from '../Button/Button';
 import { ProductConsumer } from '../Context/Context';
 import JazzCupPic from '../../img/Jazz_Cup.png';
 
-
-// Dynamic NavBar
-// const NavBar = (props) => {
-//     let nav = props.user ?
-//         <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-//             <Link to='/'>
-//                 <img src={logo} alt="store" className="navbar-brand"></img>
-//             </Link>
-//             <ul className="navbar-nav align-items-center">
-//                 <li className="nav-item ml-5">
-//                     <Link to="/products" className="nav-link">
-//                     Products
-//                     </Link>
-//                 </li>
-//             </ul>
-//             <Link to="/cart" className="ml-auto">
-//                 <ButtonContainer>
-//                     <span className="mr-2">
-//                     <i className="fas fa-cart-plus" />
-//                     </span>
-//                     my cart
-//                 </ButtonContainer>
-//             </Link>
-//             <Link to="/" className="ml-auto" onClick={this.props.handleLogout}>
-//                 <ButtonContainer>
-//                     <span className="mr-2">
-//                     <i className="fas fa-user" />
-//                     </span>
-//                     Logout
-//                 </ButtonContainer>
-//             </Link>
-//         </NavWrapper>
-//             :
-//         <NavWrapper>
-//             <Link to='/'>
-//                 <img src={logo} alt="store" className="navbar-brand"></img>
-//             </Link>
-//             <Link to="/signup" className="ml-auto">
-//                 <ButtonContainer>
-//                     <span className="mr-2">
-//                     <i className="fas fa-user" />
-//                     </span>
-//                     Create Account
-//                 </ButtonContainer>
-//             </Link>
-//             <Link to="/login" className="ml-auto">
-//                 <ButtonContainer>
-//                     <span className="mr-2">
-//                     <i className="fas fa-user" />
-//                     </span>
-//                     Login
-//                 </ButtonContainer>
-//             </Link>
-//         </NavWrapper>
-
-//     return (
-//         <div className='NavBar'>
-//         {nav}
-//         </div>
-//     );
-// }
-
-// class NavBar extends Component {
-//     render() {
-//     return (
-//     <div>
-//         <ProductConsumer>
-//         {({ handleLogout }) => { 
-//             return (
-//             <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-//                 <Link to='/'>
-//                     <img src={logo} alt="store" className="navbar-brand"></img>
-//                 </Link>
-//                 <ul className="navbar-nav align-items-center">
-//                     <li className="nav-item ml-5">
-//                         <Link to="/products" className="nav-link">
-//                         Products
-//                         </Link>
-//                     </li>
-//                 </ul>
-//                 <Link to="/signup" className="ml-auto">
-//                     <ButtonContainer>
-//                         <span className="mr-2">
-//                         <i className="fas fa-user" />
-//                         </span>
-//                         Create Account
-//                     </ButtonContainer>
-//                 </Link>
-//                 <Link to="/login" className="ml-auto">
-//                     <ButtonContainer>
-//                         <span className="mr-2">
-//                         <i className="fas fa-user" />
-//                         </span>
-//                         Login
-//                     </ButtonContainer>
-//                 </Link>
-//                 <Link to="/" 
-//                 className="ml-auto"
-//                 onClick={this.props.handleLogout}
-//                 >
-//                     <ButtonContainer>
-//                         <span className="mr-2">
-//                         <i className="fas fa-user" />
-//                         </span>
-//                         Logout
-//                     </ButtonContainer>
-//                 </Link>
-//                 <Link to="/cart" className="ml-auto">
-//                     <ButtonContainer>
-//                         <span className="mr-2">
-//                         <i className="fas fa-cart-plus" />
-//                         </span>
-//                         my cart
-//                     </ButtonContainer>
-//                 </Link>
-//             </NavWrapper>
-//                 );
-//         }
-//     }
-//         </NavWrapper>
-//     </div>
-
-
-/*NavBar is working, but dynamic isn't */
 class NavBar extends Component {
     render() {
         return (
@@ -175,7 +50,7 @@ class NavBar extends Component {
                         <div>
                             <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
                                 <Link to='/'>
-                                    <img src={logo} alt="store" className="navbar-brand"></img>
+                                    <img src={JazzCupPic} alt="store" className="navbar-brand"></img>
                                 </Link>
                                 <ul className="navbar-nav align-items-center">
                                     <li className="nav-item ml-4">
