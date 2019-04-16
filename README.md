@@ -11,8 +11,8 @@ Come one, come all! Jokes-R-Us is your one-stop-shop for all things funny, humor
 * Heroku
 
 ## Getting Started
-Trello Board planning: https://trello.com/b/wxb5lVBT/wdi-project-4
-Deployed App on Heroku: https://jokes-r-us-app.herokuapp.com/
+* Trello Board planning: https://trello.com/b/wxb5lVBT/wdi-project-4
+* Deployed App on Heroku: https://jokes-r-us-app.herokuapp.com/
 
 ## Unsolved Problems
 As of right now, the largest issue that still remains to be solved is the issue regarding persisting user cart information between sign-out and sign-in. Currently, when a user signs-out, their cart data is lost and does not persist so that the user can come back to it when they sign in. This issue is isolated to the handleAddToCart method and is primarily the result of the user cart state not getting properly modified.
