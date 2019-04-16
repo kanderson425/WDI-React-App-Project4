@@ -1,5 +1,5 @@
 # Introduction
-Come one, come all! Jokes-R-Us is your one-stop-shop for all things funny, humorous and down-right stupid.
+Come one, come all! Jokes-R-Us is your one-stop-shop for all things funny, humorous and down-right stupid. Whether you indulge in Dad Jokes, are a fan of Chuck Norris, or are a meme-queen, the Jokes-R-Us eCommerce site is a perfect marriage between two of my favorite things: humor and React.js. 
 
 ## Home Page
 ![WDI-Project4-HomePage](https://user-images.githubusercontent.com/46425993/56216446-11cab880-6027-11e9-8b29-554ad5aadc39.png)
@@ -14,7 +14,7 @@ Come one, come all! Jokes-R-Us is your one-stop-shop for all things funny, humor
 <img width="1676" alt="WDI-Project-CartPage" src="https://user-images.githubusercontent.com/46425993/56216796-b4833700-6027-11e9-9649-ed22fdc57be1.png">
 
 # Technologies Used
-* HTMl5/CSS/JavaScript
+* HTML5/CSS/JavaScript
 * React.js
 * Node
 * Express
