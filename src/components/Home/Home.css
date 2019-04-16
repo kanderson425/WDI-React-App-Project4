@@ -7,6 +7,12 @@
     /* margin-left: -50px; */
     color: var(--mainDark);
 }
+.titlecontainer h1 {
+    font-weight: bold;
+}
+.titlecontainer h3 {
+    font-weight: bold;
+}
 
 .homePageButton {
     background-color: white;
