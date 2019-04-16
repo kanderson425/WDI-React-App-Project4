@@ -3,12 +3,12 @@ Come one, come all! Jokes-R-Us is your one-stop-shop for all things funny, humor
 
 
 ## Technologies Used
-..* HTMl5/CSS/JavaScript
-..* React.js
-..* Node
-..* Express
-..* MongoDB/Mongoose
-..* Heroku
+* HTMl5/CSS/JavaScript
+* React.js
+* Node
+* Express
+* MongoDB/Mongoose
+* Heroku
 
 ## Getting Started
 Trello Board planning: https://trello.com/b/wxb5lVBT/wdi-project-4
