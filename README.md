@@ -1,13 +1,14 @@
 ## Introduction
 Come one, come all! Jokes-R-Us is your one-stop-shop for all things funny, humorous and down-right stupid.
 
-#Home Page
-https://user-images.githubusercontent.com/46425993/56216446-11cab880-6027-11e9-8b29-554ad5aadc39.png
-#Products Page
+# Home Page
+![WDI-Project4-HomePage](https://user-images.githubusercontent.com/46425993/56216446-11cab880-6027-11e9-8b29-554ad5aadc39.png)
 
-#Product Details Page
+# Products Page
 
-#Cart Page
+# Product Details Page
+
+# Cart Page
 
 
 ## Technologies Used
