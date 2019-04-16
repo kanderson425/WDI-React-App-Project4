@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import './LoginPage.css';
 import userService from '../../utils/userService';
+import Bruce from '../../img/Bruce_Almighty.gif';
 
 class LoginPage extends Component {
   
@@ -37,25 +38,26 @@ class LoginPage extends Component {
   render() {
     return (
       <div className="LoginPage">
-        <header className="header-footer">Log In</header>
-        <form className="form-horizontal" onSubmit={this.handleSubmit} >
-          <div className="form-group">
-            <div className="col-sm-12">
+        <h1 className="text-center mt-5">Log In</h1>
+        <form className="form mt-3" onSubmit={this.handleSubmit} >
+          <div className="form-group mt-3">
+            <div className="col-sm-4 inputContainer mt3">
               <input type="email" className="form-control" placeholder="Email" value={this.state.email} name="email" onChange={this.handleChange} />
             </div>
           </div>
           <div className="form-group">
-            <div className="col-sm-12">
+            <div className="col-sm-4 inputContainer">
               <input type="password" className="form-control" placeholder="Password" value={this.state.pw} name="pw" onChange={this.handleChange} />
             </div>
           </div>
           <div className="form-group">
-            <div className="col-sm-12 text-center">
-              <button className="btn btn-default">Log In</button>&nbsp;&nbsp;&nbsp;
+            <div className="col-sm-4 text-center inputContainer">
+              <button id="authbtn" className="btn btn-default">Log In</button>&nbsp;&nbsp;&nbsp;
               <Link to='/'>Cancel</Link>
             </div>
           </div>
         </form>
+        <img className="mt-3" src={Bruce} alt="Bruce Almighty"/>
       </div>
     );
   }

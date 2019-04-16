@@ -24,7 +24,7 @@ class Details extends Component {
                                     <img src={img} className="img-fluid" alt="product"/>
                                 </div>
                         {/* product text */}
-                                <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
+                                <div className="col-10 mx-auto col-md-6 my-3 text-capitalize bg-white">
                                     <h2>{title}</h2>
                                     <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
                                         made by: <span className="text-uppercase">
@@ -40,7 +40,7 @@ class Details extends Component {
                                     <p className="text-capitalize font-weight-bold mt-3 mb-0">
                                     some info about the product
                                     </p>
-                                    <p className="text-muted lead">{info}</p>
+                                    <p className="text-muted lead bg-white">{info}</p>
                                     {/* buttons */}
                                     <div>
                                         <Link to='/'>

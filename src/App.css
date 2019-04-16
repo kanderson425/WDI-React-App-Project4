@@ -20,15 +20,9 @@
 
 body {
   font-family: 'Oswald', sans-serif !important;
-  /* background: var(--mainYellow) !important; */
-  /* background-image: url('https://wallpapercave.com/wp/wp2061394.jpg') !important; */
   background-image: url('./img/90s_Theme_Background.png') !important;
-  /* background-image: url('./img/90s_Theme_Background_3.jpg') !important; */
+
   background-color: #cccc; 
-
-
-  
-
   color: var(--mainDark) !important;
 }
 

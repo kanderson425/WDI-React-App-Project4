@@ -1,0 +1,26 @@
+.LoginPage {
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+    padding-left: 40%;
+}
+
+.form-horizontal {
+    padding-left: 40%;
+}
+
+.inputContainer {
+    text-align: center;
+}
+
+#authbtn {
+    background-color: var(--mainYellow) !important;
+}
+
+#authbtn:hover {
+    background-color: var(--mainWhite) !important;
+}
+
+

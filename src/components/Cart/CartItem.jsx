@@ -48,9 +48,4 @@ function CartItem({item, value}) {
     )
 }
 
-
-
-
-
-
 export default CartItem; 

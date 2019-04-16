@@ -17,7 +17,4 @@ function CartList({value}) {
     )
 }
 
-
-
-
 export default CartList;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import userService from '../../utils/userService';
+import {ButtonContainer} from '../Button/Button';
 
 
 class SignUpForm extends Component {
@@ -42,8 +43,8 @@ class SignUpForm extends Component {
   render() {
     return (
       <div>
-        <header className="header-footer">Sign Up</header>
-        <form className="form-horizontal" onSubmit={this.handleSubmit} >
+        <h1 className="header-footer mt-5">Sign Up</h1>
+        <form className="form-horizontal mt-4" onSubmit={this.handleSubmit} >
           <div className="form-group">
             <div className="col-sm-4 ">
               <input type="text" className="form-control" placeholder="Name" value={this.state.name} name="name" onChange={this.handleChange} />
@@ -66,7 +67,7 @@ class SignUpForm extends Component {
           </div>
           <div className="form-group">
             <div className="col-sm-4 text-center">
-              <button className="btn btn-default" disabled={this.isFormInvalid()}>Sign Up</button>&nbsp;&nbsp;
+              <button id="authbtn" className="btn btn-default" disabled={this.isFormInvalid()}>Sign Up</button>&nbsp;&nbsp;
               <Link to='/'>Cancel</Link>
             </div>
           </div>

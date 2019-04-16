@@ -8,8 +8,7 @@ class Product extends Component {
     render() {
         const {id, title, img, price, inCart} = this.props.product;
         return (
-            <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3
-            my-3">
+            <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
                 <div className="card">
                 <ProductConsumer>
                     {(value) => (
@@ -63,7 +62,7 @@ Product.propTypes = {
 
 const ProductWrapper = styled.div`
 .card {
-    border-color: transparent;
+    border-color: black;
     transition:all 1s linear;
 
 }
@@ -74,7 +73,7 @@ const ProductWrapper = styled.div`
 }
 &:hover{
     .card {
-        border:0.04rem solid rgba(0, 0, 0, 0.2);
+        border:0..04rem solid rgba(0, 0, 0, 0.2);
         box-shadow: 2px 2px 5px 0px rgba(0,0,0, 0.02);
     }
     .card-footer{

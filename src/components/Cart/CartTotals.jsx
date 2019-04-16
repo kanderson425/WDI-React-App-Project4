@@ -48,6 +48,4 @@ function CartTotals({value, history}) {
 
 }
 
-
-
 export default CartTotals;
