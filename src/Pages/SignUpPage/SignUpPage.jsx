@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import SignupForm from '../../components/SignUpForm/SignUpForm';
+import SignUpForm from '../../components/SignUpForm/SignUpForm';
+import test from '../../components/SignUpForm/SignUpForm';
 import '../SignUpPage/SignUpPage.css';
 // import { ProductConsumer } from '../../components/Context/Context';
 
@@ -16,7 +17,7 @@ class SignUpPage extends Component {
   render() {
     return (
       <div className='SignupPage'>
-        <SignupForm 
+        <SignUpForm 
           {...this.props} 
           updateMessage={this.updateMessage}
           history={this.props.history}  
