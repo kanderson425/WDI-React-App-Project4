@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SignupForm from '../../components/SignUpForm/SignUpForm';
-import test from '../../components/SignUpForm/SignUpForm';
 import '../SignUpPage/SignUpPage.css';
 // import { ProductConsumer } from '../../components/Context/Context';
 
