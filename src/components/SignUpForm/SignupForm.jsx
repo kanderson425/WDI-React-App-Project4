@@ -77,5 +77,4 @@ class SignUpForm extends Component {
   }
 };
 
-
 export default withRouter(SignUpForm);
